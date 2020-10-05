@@ -1,6 +1,6 @@
 //Bitwise
 var bitwiseComplement = function(N) {
-    // return N ? (Math.pow(2, Math.ceil(Math.log2(N))) - 1) & ~N : 1;
+    return N ? (Math.pow(2, Math.ceil(Math.log2(N))) - 1) & ~N : 1;
 };
 
 //Naive
