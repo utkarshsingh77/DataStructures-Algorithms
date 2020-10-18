@@ -9,7 +9,7 @@ var findRepeatedDnaSequences = function(s) {
     let seen = new Set();
     let added = new Set();
     let results = [];
-    for (let i = 0; i < s.length; i++) {
+    for (let i = 0; i < s.length - 9; i++) {
         let currentSub = s.slice(i, i + 10);
         if (seen.has(currentSub) && !added.has(currentSub)) {
             results.push(currentSub);
@@ -26,7 +26,7 @@ var findRepeatedDnaSequences = function(s) {
 var findRepeatedDnaSequences = function(s) {
     let seen = {};
     let results = [];
-    for (let i = 0; i < s.length; i++) {
+    for (let i = 0; i < s.length - 9; i++) {
         let currentSub = s.slice(i, i + 10);
         if (seen[currentSub] === true) {
             results.push(currentSub);
